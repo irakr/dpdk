@@ -184,7 +184,7 @@ load_vfio_module()
 	echo "Loading VFIO module"
 	/sbin/lsmod | grep -s vfio_pci > /dev/null
 	if [ $? -ne 0 ] ; then
-		if [ -f /lib/modules/$(uname -r)/$VFIO_PATH ] ; then
+		if [ -f /lib/modules/5.4.0-163-generic/$VFIO_PATH ] ; then
 			sudo /sbin/modprobe vfio-pci
 		fi
 	fi

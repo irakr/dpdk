@@ -69,7 +69,7 @@ $(error RTE_TOOLCHAIN is not defined)
 endif
 
 # can be overridden by make command line or exported environment variable
-RTE_KERNELDIR ?= /lib/modules/$(shell uname -r)/build
+RTE_KERNELDIR ?= /lib/modules/5.4.0-163-generic/build
 
 export RTE_TARGET
 export RTE_ARCH
